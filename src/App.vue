@@ -1,20 +1,13 @@
+
 <template>
     <div id="app">
-        <div class="topnav">
-            <a class="active" href="/">Home</a>
-            <a href="">News</a>
 
-            <router-link to="/">/</router-link>
-            <router-link to="/content">content</router-link>
-            <a href="/content">Contact</a>
-            <a href="#about">About</a>
-        </div>
-        <img src="./assets/logo.png">
+
+        <!--<img src="./assets/logo.png">-->
         <router-view/>
         <footer>
-            <p>Vue js example</p>
-            <p>Copyright@ <a href="mailto:someone@example.com">
-                thanseehabdulla@gmail.com</a>.</p>
+            <p style="font-size: 14px">
+            Copyright@ invoice billing</p>
         </footer>
     </div>
 </template>
@@ -29,10 +22,12 @@
     footer {
         position: fixed;
         bottom: 0px;
+        padding:10px 0px;
         display: flex;
         justify-content: space-around;
         width: 100%;
-        background: black;
+        color:white;
+        background: #101010;
     }
 
     #app {
@@ -69,7 +64,8 @@
     }
 
     .topnav a.active {
-        background-color: #4CAF50;
+        background-color: red;
         color: white;
     }
+
 </style>
